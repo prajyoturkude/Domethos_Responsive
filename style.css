@@ -1,0 +1,131 @@
+
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+.container
+{
+   width:  100vw;
+    height: 100vh;
+    padding: 0 8%;
+    background-image: url(images/background\ \(1\).png);
+    -webkit-background-size : cover;
+    -moz-background-size: cover ;
+    -moz-background-size: cover ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: absolute;
+    position: relative; 
+    
+    opacity:100%;
+    
+    
+}
+.logo{
+    
+    width:  350px;
+    padding: 20px 0 ;
+    cursor: pointer;
+   opacity: 2;
+}
+.logo h1{
+    top: 100%;
+
+}
+.content
+{
+    top: 50% ;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1
+{
+   font-size: 64px;
+   font-weight: 600;
+}
+.content h1 span
+{
+  color: white;
+}
+
+.content button
+{
+   background: transparent;
+   border: 2px solid #fff;
+   outline: none;
+   padding: 12px 25px;
+   color: white;
+}
+.launch-time
+{
+    display: flex;
+}
+.launch-time div
+{
+ flex-basis: 100px;
+}
+.launch-time div p 
+{
+  font-size: 60px;
+  margin-bottom: -14px;
+
+}
+.rocket{
+    width: 300px ;
+    position: absolute ;
+    right: -100%;
+    left: 100%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+
+}
+
+@keyframes rocket
+{
+    0%
+    {
+        top: 100%;
+        bottom: 0;
+        opacity: 0;
+
+    }
+    100%{
+        top: -200%;
+        bottom: 100%;
+        opacity: 5;
+    }
+}
+@media screen and (max-width : 700px) {
+    .container
+    {
+        padding: 0 2%;
+        width: 96%;
+    }
+} 
+@media (max-width : 700px)
+{
+    .content height
+    {
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width : 700px)
+{
+   .rocket
+    {
+ display: none;
+    }
+}
+@media screen and (max-width : 1000px)
+{
+   .rocket
+    {
+ display: none;
+    }
+}
